@@ -1,0 +1,197 @@
+/*
+  author: Jakaria & Emtiaz
+  Theme: Food Ordering Website
+  version: 1.0
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.tbl-full{
+    width: 100%;
+}
+.tbl-30{
+    width: 30%;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+table tr td{
+    padding: 1%;
+}
+
+.btn-primary{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    border-radius: 20%;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: #3742fa;
+}
+
+.btn-secondary{
+    background-color: #7bed9f;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    border-radius: 20%;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background-color: #2ed573;
+}
+
+.btn-danger{
+    background-color: #ff6b81;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    border-radius: 20%;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #ff4757;
+}
+
+.success{
+    width: 20%;
+    background-color: #2ed573;
+}
+
+.error{
+    color: #ff4757;
+}
+
+
+/* menu css */
+.menu{
+    border-bottom: 1px solid gray;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #5352ed;
+}
+
+.menu ul li a:hover{
+   color: #ff4757;
+}
+
+/*main content css*/
+.main-content{
+    background-color: #ced6e0;
+    padding: 3% 0;
+}
+.col-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+/* footer css */
+.footer{
+    background-color: #cf7979;
+    color: rgb(66, 46, 46);
+}
+
+/* login page css */
+/* .login{
+    border: 1px solid gray;
+    width: 20%;
+    margin: 10% auto;
+    padding: 2%;
+} */
+
+.login {
+    /* background-color: #ffffff; */
+    background: linear-gradient(to right, #f7c2c2, #cb8ea4);
+    border-radius: 8px;
+    width: 25%;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 10% auto;
+}
+
+.login h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login input[type="text"], 
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #5a9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #488;
+}
+
+
+.login p {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.login a {
+    color: rgb(5, 101, 82);
+    text-decoration: none;
+}
+
+.login a:hover {
+    color: #333;
+    text-decoration: underline;
+}
