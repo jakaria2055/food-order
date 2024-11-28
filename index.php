@@ -14,6 +14,13 @@
     </section>
     <!-- fOOD sEARCH Section Ends Here -->
 
+    <?php
+        if(isset($_SESSION['order'])){
+            echo $_SESSION['order'];
+            unset($_SESSION['order']);
+        }
+    ?>
+
     <!-- CAtegories Section Starts Here -->
     <section class="categories">
         <div class="container">
@@ -119,7 +126,7 @@
                         </p>
                         <br>
 
-                        <a href="order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order Now</a>
+                        <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
 

@@ -1,145 +1,156 @@
 /*
-  author: Jakaria & Emtiaz
+  Author: Jakaria & Emtiaz
   Theme: Food Ordering Website
-  version: 1.0
+  Version: 1.0
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper{
+.wrapper {
     padding: 1%;
     width: 80%;
     margin: 0 auto;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.clearfix{
+.clearfix {
     float: none;
     clear: both;
 }
 
-.tbl-full{
+.tbl-full {
     width: 100%;
 }
-.tbl-30{
+
+.tbl-30 {
     width: 30%;
 }
 
-table tr th{
-    border-bottom: 1px solid black;
+table tr th {
+    border-bottom: 1px solid #6c5ce7;
     padding: 1%;
     text-align: left;
+    color: #2d3436;
 }
-table tr td{
+
+table tr td {
     padding: 1%;
 }
 
-.btn-primary{
-    background-color: #1e90ff;
+.btn-primary {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to Blue */
     padding: 1%;
     color: white;
     text-decoration: none;
     border-radius: 20%;
     font-weight: bold;
-}
-.btn-primary:hover{
-    background-color: #3742fa;
+    transition: 0.3s;
 }
 
-.btn-secondary{
-    background-color: #7bed9f;
+.btn-primary:hover {
+    background: linear-gradient(to right, #3b82f6, #9333ea); /* Blue to Purple */
+}
+
+.btn-secondary {
+    background: linear-gradient(to right, #11998e, #38ef7d); /* Green Gradient */
     padding: 1%;
     color: black;
     text-decoration: none;
     border-radius: 20%;
     font-weight: bold;
-}
-.btn-secondary:hover{
-    background-color: #2ed573;
+    transition: 0.3s;
 }
 
-.btn-danger{
-    background-color: #ff6b81;
+.btn-secondary:hover {
+    background: linear-gradient(to right, #57ca85, #11998e); /* Muted Green */
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #e63946, #ff6b81); /* Red Gradient */
     padding: 1%;
     color: white;
     text-decoration: none;
     border-radius: 20%;
     font-weight: bold;
-}
-.btn-danger:hover{
-    background-color: #ff4757;
+    transition: 0.3s;
 }
 
-.success{
+.btn-danger:hover {
+    background: linear-gradient(to right, #ff6b81, #e63946); /* Reverse Red Gradient */
+}
+
+.success {
     width: 20%;
-    background-color: #2ed573;
+    background: linear-gradient(to right, #38ef7d, #6a11cb); /* Green to Purple */
+    padding: 1%;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.error{
+.error {
     color: #ff4757;
 }
 
-
-/* menu css */
-.menu{
-    border-bottom: 1px solid gray;
+/* Menu CSS */
+.menu {
+    border-bottom: 1px solid #6c5ce7;
 }
-.menu ul{
+
+.menu ul {
     list-style-type: none;
 }
 
-.menu ul li{
+.menu ul li {
     display: inline;
     padding: 1%;
 }
 
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
     font-weight: bold;
-    color: #5352ed;
+    color: #6a11cb; /* Purple */
+    transition: 0.3s;
 }
 
-.menu ul li a:hover{
-   color: #ff4757;
+.menu ul li a:hover {
+    color: #e63946; /* Red */
 }
 
-/*main content css*/
-.main-content{
-    background-color: #ced6e0;
+/* Main Content CSS */
+.main-content {
+    background: linear-gradient(to bottom, #f7f7f7, #e3e3e3); /* Soft Gray Gradient */
     padding: 3% 0;
 }
-.col-4{
+
+.col-4 {
     width: 18%;
-    background-color: white;
+    background: linear-gradient(to bottom right, #ffffff, #f1f1f1); /* Subtle White Gradient */
     margin: 1%;
     padding: 2%;
     float: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
-/* footer css */
-.footer{
-    background-color: #cf7979;
-    color: rgb(66, 46, 46);
+/* Footer CSS */
+.footer {
+    background: linear-gradient(to right, #f7c2c2, #cf7979); /* Pink Gradient */
+    color: #442c2c;
+    padding: 1%;
+    text-align: center;
 }
 
-/* login page css */
-/* .login{
-    border: 1px solid gray;
-    width: 20%;
-    margin: 10% auto;
-    padding: 2%;
-} */
-
+/* Login Page CSS */
 .login {
-    /* background-color: #ffffff; */
-    background: linear-gradient(to right, #f7c2c2, #cb8ea4);
+    background: linear-gradient(to right, #11998e, #38ef7d); /* Green Gradient */
     border-radius: 8px;
     width: 25%;
     padding: 30px 20px;
@@ -150,11 +161,11 @@ table tr td{
 
 .login h1 {
     font-size: 1.8em;
-    color: #333;
+    color: #2d3436;
     margin-bottom: 20px;
 }
 
-.login input[type="text"], 
+.login input[type="text"],
 .login input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -169,17 +180,16 @@ table tr td{
     padding: 10px;
     font-size: 1.1em;
     color: #fff;
-    background-color: #5a9;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to Blue */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 .login input[type="submit"]:hover {
-    background-color: #488;
+    background: linear-gradient(to right, #9333ea, #3b82f6); /* Blue to Purple */
 }
-
 
 .login p {
     margin-top: 15px;
@@ -187,11 +197,11 @@ table tr td{
 }
 
 .login a {
-    color: rgb(5, 101, 82);
+    color: #6a11cb; /* Purple */
     text-decoration: none;
 }
 
 .login a:hover {
-    color: #333;
+    color: #e63946; /* Red */
     text-decoration: underline;
 }

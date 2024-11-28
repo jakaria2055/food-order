@@ -1,115 +1,146 @@
 /* 
     Author: Vijay Thapa;
     Theme: Restaurant Food Order;
-    version: 1.0;
+    Version: 1.0;
 */
 
 /* CSS for All */
-*{
-    margin: 0 0;
-    padding: 0 0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+body {
+    background: linear-gradient(to right, #fff6e0, #ffe5c8); /* Soft and inviting gradient */
+    color: #2f3542;
+}
+
+.container {
     width: 80%;
     margin: 0 auto;
     padding: 1%;
 }
-.img-responsive{
+
+.img-responsive {
     width: 100%;
 }
-.img-curve{
+
+.img-curve {
     border-radius: 15px;
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.text-left{
+
+.text-left {
     text-align: left;
 }
-.text-white{
+
+.text-white {
     color: white;
 }
 
-.clearfix{
+.clearfix {
     clear: both;
     float: none;
 }
 
-a{
-    color: #ff6b81;
+a {
+    color: #FF4500; /* Vibrant orange-red */
     text-decoration: none;
 }
-a:hover{
-    color: #ff4757;
+
+a:hover {
+    color: #FF6347; /* Slightly lighter tomato red */
 }
 
-.btn{
+.btn {
     padding: 1%;
     border: none;
     font-size: 1rem;
     border-radius: 5px;
 }
-.btn-primary{
-    background-color: #ff6b81;
+
+.btn-primary {
+    background-color: #FF8C00; /* Dark Orange */
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
-.btn-primary:hover{
-    color: white;
-    background-color: #ff4757;
+
+.btn-primary:hover {
+    background-color: #FF4500; /* Vibrant orange-red */
 }
-h2{
-    color: #2f3542;
+
+h2 {
+    color: #2f3542; /* Dark Gray */
     font-size: 2rem;
     margin-bottom: 2%;
 }
-h3{
+
+h3 {
     font-size: 1.5rem;
 }
-.float-container{
+
+.float-container {
     position: relative;
 }
-.float-text{
+
+.float-text {
     position: absolute;
     bottom: 50px;
     left: 40%;
 }
-fieldset{
-    border: 1px solid white;
+
+fieldset {
+    border: 1px solid #FF4500; /* Match button hover color */
     margin: 5%;
     padding: 3%;
     border-radius: 5px;
 }
 
+.error {
+    padding: 2%;
+    color: #FF4500; /* Vibrant orange-red */
+}
 
-/* CSSS for navbar section */
+.success {
+    padding: 2%;
+    color: #32CD32; /* Lime Green */
+}
 
-.logo{
+/* CSS for Navbar Section */
+.logo {
     width: 10%;
     float: left;
 }
-.menu{
+
+.menu {
     line-height: 60px;
 }
-.menu ul{
+
+.menu ul {
     list-style-type: none;
 }
 
-.menu ul li{
+.menu ul li {
     display: inline;
     padding: 1%;
     font-weight: bold;
 }
 
+.menu {
+    background-color: white; /* Ensures navbar remains white */
+}
 
-/* CSS for Food SEarch Section */
-
-.food-search{
+/* CSS for Food Search Section */
+.food-search {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,143 +148,175 @@ fieldset{
     padding: 7% 0;
 }
 
-.food-search input[type="search"]{
+.food-search input[type="search"] {
     width: 50%;
     padding: 1%;
     font-size: 1rem;
-    border: none;
+    border: 1px solid #FF6347; /* Tomato color */
     border-radius: 5px;
+    outline: none;
 }
 
+.food-search input[type="search"]:focus {
+    border-color: #FF4500; /* Vibrant orange-red */
+}
 
 /* CSS for Categories */
-.categories{
+.categories {
     padding: 4% 0;
 }
 
-.box-3{
+.box-3 {
     width: 28%;
     float: left;
     margin: 2%;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.box-3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /* CSS for Food Menu */
-.food-menu{
-    background-color: #ececec;
+.food-menu {
+    background: linear-gradient(to right, #ffe8d6, #ffe3c5); /* Gentle gradient for food menu */
     padding: 4% 0;
 }
-.food-menu-box{
+
+.food-menu-box {
     width: 43%;
     margin: 1%;
     padding: 2%;
     float: left;
     background-color: white;
     border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.food-menu-img{
+.food-menu-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.food-menu-img {
     width: 20%;
     float: left;
+    border-radius: 10px;
 }
 
-.food-menu-desc{
+.food-menu-desc {
     width: 70%;
     float: left;
     margin-left: 8%;
 }
 
-.food-price{
+.food-price {
     font-size: 1.2rem;
+    color: #FF4500; /* Vibrant orange-red */
     margin: 2% 0;
 }
-.food-detail{
-    font-size: 1rem;
-    color: #747d8c;
-}
 
+.food-detail {
+    font-size: 1rem;
+    color: #747d8c; /* Subtle gray */
+}
 
 /* CSS for Social */
-.social ul{
+.social ul {
     list-style-type: none;
 }
-.social ul li{
+
+.social ul li {
     display: inline;
     padding: 1%;
 }
 
-/* for Order Section */
-.order{
+/* CSS for Order Section */
+.order {
+    background: linear-gradient(to right, #ffecd2, #fcb69f); /* Soft peach gradient */
     width: 50%;
     margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.input-responsive{
+
+.input-responsive {
     width: 96%;
     padding: 1%;
     margin-bottom: 3%;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
+    background-color: #fff8f1; /* Subtle peach tone */
 }
-.order-label{
-    margin-bottom: 1%; 
+
+.input-responsive:focus {
+    border-color: #FF4500; /* Vibrant orange-red */
+}
+
+.order-label {
+    margin-bottom: 1%;
     font-weight: bold;
+    color: #4a4a4a; /* Neutral text color */
 }
-
-
 
 /* CSS for Mobile Size or Smaller Screen */
-
-@media only screen and (max-width:768px){
-    .logo{
+@media only screen and (max-width: 768px) {
+    .logo {
         width: 80%;
         float: none;
         margin: 1% auto;
     }
 
-    .menu ul{
+    .menu ul {
         text-align: center;
     }
 
-    .food-search input[type="search"]{
+    .food-search input[type="search"] {
         width: 90%;
         padding: 2%;
         margin-bottom: 3%;
     }
 
-    .btn{
+    .btn {
         width: 91%;
         padding: 2%;
     }
 
-    .food-search{
+    .food-search {
         padding: 10% 0;
     }
 
-    .categories{
+    .categories {
         padding: 20% 0;
     }
-    h2{
+
+    h2 {
         margin-bottom: 10%;
     }
-    .box-3{
+
+    .box-3 {
         width: 100%;
         margin: 4% auto;
     }
 
-    .food-menu{
+    .food-menu {
         padding: 20% 0;
     }
 
-    .food-menu-box{
+    .food-menu-box {
         width: 90%;
         padding: 5%;
         margin-bottom: 5%;
     }
-    .social{
+
+    .social {
         padding: 5% 0;
     }
-    .order{
+
+    .order {
         width: 100%;
     }
 }
